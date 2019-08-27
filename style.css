@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+  height: 69vh;
+  width: 40vw;
+  background-color: #9dd2ea;
+  margin: 17vh auto;
+  padding: 3vmin;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #009de4;
+}
+
+#score {
+  background-color: #f1ff92;
+  color: #888e5f;
+  padding: 1.4vmin;
+  position: absolute;
+  left: 62vw;
+  box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct {
+  position: absolute;
+  left: 48vw;
+  background-color: #42e252;
+  color: #fff;
+  padding: 11px;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 48vw;
+  background-color: #de401a;
+  color: #fff;
+  padding: 11px;
+  display: none;
+}
+
+#question {
+  justify-content: center;
+  align-content: center;
+  width: 38vw;
+  height: 15vh;
+  padding: 5vmin 0;
+  margin: 7vh auto 2vh auto;
+  background-color: #9da0ea;
+  box-shadow: 0px 4px #535aa8;
+  font-size: 13vmin;
+  text-align: center;
+
+  line-height: 15vh;
+  font-family: cursive, sans-serif;
+  color: #000;
+}
+
+#instruction {
+  width: 38vw;
+  height: 5vh;
+  background-color: #b481d9;
+  margin: 2vh auto;
+  text-align: center;
+  line-height: 5vh;
+  box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+  height: 5vh;
+  width: 38vw;
+  margin: 2vh auto;
+}
+
+.box {
+  width: 7.2vmax;
+  height: 12vh;
+  background-color: #fff;
+  float: left;
+  margin-right: 3vmax;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 12vh;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.box:hover,
+#startReset:hover {
+  background-color: #9c89f6;
+  color: #fff;
+  box-shadow: 0px 4px #6b54d3;
+}
+
+#box4 {
+  margin-right: 0;
+}
+
+.box:active,
+#startReset:active {
+  box-shadow: 0px 0px #6b54d3;
+  top: 4px;
+}
+
+#startReset {
+  width: 9vmax;
+  padding: 2vmin;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 9vh auto;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* line-height: 0; */
+  position: relative;
+  transition: all 0.2s;
+}
+
+#timeRemaining {
+  width: 17vw;
+  padding: 2vmin;
+  position: absolute;
+  top: 83vh;
+  left: 39vw;
+  text-align: center;
+  background-color: rgba(181, 235, 16, 0.8);
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#gameOver {
+  height: 30vmin;
+  width: 38vw;
+  background: linear-gradient(#f3ca6b, #f3706c);
+  color: #fff;
+  font-size: 4vmin;
+  /* line-height: 7vmin; */
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 37vh;
+  left: 30.3vw;
+  z-index: 2;
+  display: none;
+
+}
